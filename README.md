@@ -13,7 +13,7 @@ pip install -r requirements.txt
 web-hook-me-up.py
 -----------------
 
-Will add a webhook for every bitbucket repositiory.
+Will add a webhook for every bitbucket repositiory for an organisation.
 
 
 ```
@@ -38,7 +38,7 @@ Change the following variables in the file as appropriate -
 ```
   description='Hook for slack'
   url="https://hooks.slack.com/services/XXXXXXXXXXXXXX"
-  ownner="XXXXXXX"
+  owner="XXXXXXX"
   events=['issue:created','issue:updated', 'pullrequest:created', 'pullrequest:approved']
 
 ```
