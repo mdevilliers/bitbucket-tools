@@ -46,7 +46,7 @@ def main():
   # things to change
   description='Hook for slack'
   url="https://hooks.slack.com/services/XXXXXXXXXXXXXX"
-  ownner="XXXXXXX"
+  owner="XXXXXXX"
   events=['issue:created','issue:updated', 'pullrequest:created', 'pullrequest:approved']
 
   repositories = Repository.find_repositoris_by_owner_and_role(client=bitbucket, role=RepositoryRole.ADMIN, owner=owner)
